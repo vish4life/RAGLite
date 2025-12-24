@@ -1,0 +1,54 @@
+INFO 2025-12-24 19:18:15,712 autoreload Watching for file changes with StatReloader
+INFO 2025-12-24 19:19:26,556 views File uploaded: BankingTrendProgress23-24.pdf
+INFO 2025-12-24 19:19:26,575 views File hash: e62e815439edec2cf9d4ffab402b9dcf
+INFO 2025-12-24 19:19:26,594 views Document 06d38adb-8e02-48b8-999d-b1282f3dc8bc created
+INFO 2025-12-24 19:19:26,594 views File path: /Users/lakshmishashankch/Development/RAGLite/backend/media/documents/BankingTrendProgress23-24.pdf
+INFO 2025-12-24 19:19:55,283 views Extracted 533317 characters and 228 pages from PDF
+INFO 2025-12-24 19:20:24,177 views Created 788 text chunks
+INFO 2025-12-24 19:20:24,224 posthog Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO 2025-12-24 19:20:56,914 views Stored 788 text chunks in ChromaDB
+INFO 2025-12-24 19:20:56,924 views Document 06d38adb-8e02-48b8-999d-b1282f3dc8bc completed
+INFO 2025-12-24 19:20:56,939 log "POST /ragengine/documents/upload/ HTTP/1.1" 200 459
+INFO 2025-12-24 19:21:27,949 log "OPTIONS /ragengine/chats/query/ HTTP/1.1" 200 0
+INFO 2025-12-24 19:21:27,953 views Query: {'query': 'can you explain me about the banking trends?'}
+INFO 2025-12-24 19:21:28,241 vectordb_services Similarity search results: {'ids': [[]], 'embeddings': None, 'documents': [[]], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[]], 'distances': [[]]}
+INFO 2025-12-24 19:21:28,241 views No cache hit - searching documents
+INFO 2025-12-24 19:21:28,512 views Retrieved 3 chunks from ChromaDB
+INFO 2025-12-24 19:24:49,476 llm_services Generated answer: Based on the provided context, here are some banking trends:
+
+1. The global economy is heading towards a soft landing with inflation approaching targets, leading monetary authorities to ease cycles.
+2. Despite moderation in credit growth and profitability, the financials of the global banking sector remain healthy.
+3. Prudent and proactive financial regulation and supervision are essential to maintain financial stability while supporting growth.
+4. There are concerns about the resilience of the banking sector due to weaknesses in governance, risk management practices, and regulatory frameworks.
+5. The growing role of non-banking financial institutions (NBFIs) has added complexity to the financial system, prompting regulators and central banks to strengthen their supervisory frameworks.
+6. Digital banking and FinTech solutions are being adopted, highlighting the need to improve traditional banking models and address new regulatory challenges.
+
+These trends suggest that while the global banking sector is experiencing some challenges, it remains relatively resilient, and there is a focus on improving regulation, governance, and risk management practices to support financial stability and growth.
+INFO 2025-12-24 19:24:49,489 views Generated answer (1211 characters)
+INFO 2025-12-24 19:24:50,388 views Cached question in ChromaDB
+INFO 2025-12-24 19:24:50,396 log "POST /ragengine/chats/query/ HTTP/1.1" 201 1970
+INFO 2025-12-24 19:25:22,851 views Query: {'query': 'what can you interpret about banking trends from the document?'}
+INFO 2025-12-24 19:25:23,412 vectordb_services Similarity search results: {'ids': [['55f4d68d-a4b4-4eae-9dcc-5165d6348194']], 'embeddings': None, 'documents': [['can you explain me about the banking trends?']], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[{'answer': 'Based on the provided context, here are some banking trends:\n\n1. The global economy is heading towards a soft landing with inflation approaching targets, leading monetary authorities to ease cycles.\n2. Despite moderation in credit growth and profitability, the financials of the global banking sector remain healthy.\n3. Prudent and proactive financial regulation and supervision are essential to maintain financial stability while supporting growth.\n4. There are concerns about the resilience of the ', 'chat_id': '55f4d68d-a4b4-4eae-9dcc-5165d6348194'}]], 'distances': [[0.28844451904296875]]}
+INFO 2025-12-24 19:25:23,412 views No cache hit - searching documents
+INFO 2025-12-24 19:25:23,737 views Retrieved 3 chunks from ChromaDB
+INFO 2025-12-24 19:28:14,276 llm_services Generated answer: Based on the provided context, here are some interpretations of banking trends:
+
+1. The global economy is heading towards a soft landing with inflation approaching targets, indicating a potential improvement in economic conditions.
+2. Monetary authorities have started easing cycles, while others remain in a tightening mode and some are on hold, suggesting varying levels of economic stimulus.
+3. Despite moderation in credit growth and profitability, the financials of the global banking sector remain healthy.
+4. Prudent and proactive financial regulation and supervision are essential to support monetary policy efforts and maintain financial stability.
+
+These trends suggest that while there are still challenges in the banking sector, overall conditions are improving, and regulatory frameworks play a crucial role in maintaining stability.
+INFO 2025-12-24 19:28:14,281 views Generated answer (846 characters)
+INFO 2025-12-24 19:28:15,034 views Cached question in ChromaDB
+INFO 2025-12-24 19:28:15,041 log "POST /ragengine/chats/query/ HTTP/1.1" 201 1603
+INFO 2025-12-24 19:28:46,338 views Query: {'query': 'can you summarize banking trends?'}
+INFO 2025-12-24 19:28:46,657 vectordb_services Similarity search results: {'ids': [['55f4d68d-a4b4-4eae-9dcc-5165d6348194']], 'embeddings': None, 'documents': [['can you explain me about the banking trends?']], 'uris': None, 'included': ['metadatas', 'documents', 'distances'], 'data': None, 'metadatas': [[{'chat_id': '55f4d68d-a4b4-4eae-9dcc-5165d6348194', 'answer': 'Based on the provided context, here are some banking trends:\n\n1. The global economy is heading towards a soft landing with inflation approaching targets, leading monetary authorities to ease cycles.\n2. Despite moderation in credit growth and profitability, the financials of the global banking sector remain healthy.\n3. Prudent and proactive financial regulation and supervision are essential to maintain financial stability while supporting growth.\n4. There are concerns about the resilience of the '}]], 'distances': [[0.22632038593292236]]}
+INFO 2025-12-24 19:28:46,657 views No cache hit - searching documents
+INFO 2025-12-24 19:28:46,946 views Retrieved 3 chunks from ChromaDB
+INFO 2025-12-24 19:30:25,424 llm_services Generated answer: Based on the provided context, here is a summary of banking trends:
+
+The global banking sector remains healthy despite some moderation in credit growth and profitability. Monetary authorities are easing cycles in some economies, while others remain in a tightening mode or are on hold. The financials of the top 100 global banks appear sound, according to Chart II.11 from the Banker Database (Financial Times). However, prudent and proactive financial regulation and supervision remain essential to support monetary policy efforts and maintain financial stability.
+INFO 2025-12-24 19:30:25,427 views Generated answer (565 characters)
+INFO 2025-12-24 19:30:25,949 views Cached question in ChromaDB
+INFO 2025-12-24 19:30:25,955 log "POST /ragengine/chats/query/ HTTP/1.1" 201 1318

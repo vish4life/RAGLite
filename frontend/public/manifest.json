@@ -1,0 +1,25 @@
+{
+  "short_name": "RAGLite",
+  "name": "RAGLite",
+  "icons": [
+    {
+      "src": "bot.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "bot.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "bot.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

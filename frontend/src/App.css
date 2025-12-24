@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.App {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.AppHeader {
+  width: 100%;
+  margin: auto;
+  background-color: rgb(54, 54, 129);
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 5%;
+}
+
+.footer {
+  width: 100%;
+  margin: auto;
+  background-color: rgb(54, 54, 129);
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 5%;
+}
+
+.AppBoxes {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  flex: 90%;
+  padding: 5px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+
+.uploadbox {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.uploadbox-content {
+  flex: 1;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.uploadbox-content button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.modelsbox {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.modelUploadBox {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modelbuttonbox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.modelbutton {
+  margin-top: 10px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(54, 54, 129);
+  color: white;
+  font-family: 'Verdana';
+}
+
+.modelbutton:hover {
+  background-color: rgb(74, 74, 159);
+}
+
+.modelbuttonactive {
+  background-color: rgb(107, 164, 126);
+  margin-top: 10px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: 'Verdana';
+}
+
+
+
+.boxheader {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: rgb(245, 128, 65);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.statsbox {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.statsbox-content {
+  flex: 1;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  overflow-x: hidden;
+  /* Hide horizontal scroll */
+  scroll-behavior: smooth;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.statsbox-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.statsbox-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.statsbox-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+
+.statsbox-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* Log entry styling */
+.statsbox-content p {
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+  border-left: 3px solid rgb(245, 128, 65);
+  background-color: white;
+  border-radius: 3px;
+}
+
+.chatbox {
+  flex: 2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 80%;
+  padding: 5px;
+  scroll-behavior: smooth;
+}
+
+.chatbox-content {
+  flex: 0.85;
+  overflow: hidden;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  overflow-x: auto;
+  /* Hide horizontal scroll */
+  scroll-behavior: smooth;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.chatbox-input {
+  flex: 0.15;
+  display: flex;
+  gap: 10px;
+}
+
+.chatbox-input textarea {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.chatbox-input button {
+  padding: 10px 20px;
+  background-color: rgb(54, 54, 129);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.chatbox-input button:hover {
+  background-color: rgb(74, 74, 159);
+}
+
+.chatbox-input button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.user-message {
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Montserrat', 'Verdana';
+  background-color: #d6d8df;
+  color: black;
+  border-radius: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-left: auto;
+  white-space: pre-wrap;
+  margin-bottom: 3px;
+}
+
+.bot-message {
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Montserrat', 'Verdana';
+  background-color: #4c5d8b;
+  color: white;
+  border-radius: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-right: auto;
+  white-space: pre-wrap;
+  margin-bottom: 3px;
+}
