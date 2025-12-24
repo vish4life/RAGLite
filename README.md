@@ -20,7 +20,14 @@ How to run RAGLite app
         * Open ```[http://localhost:3000]``` to view it in your browser.
 
 
-https://github.com/user-attachments/assets/a4d841b3-a38d-44e7-ac22-d962f422d1b7
+
+
+https://github.com/user-attachments/assets/a4f9ddd7-9ae7-446b-9244-1638ba623aca
+
+
+
+
+
 
 # RAGLite Architecture
 
