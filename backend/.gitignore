@@ -1,0 +1,5 @@
+backend/db.sqlite3
+**/chromadb/
+**/media/
+**/__pycache__
+.DS_Store
